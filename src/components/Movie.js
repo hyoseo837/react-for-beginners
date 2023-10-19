@@ -6,7 +6,7 @@ function Movie({ id, mediumCoverImage, title, summary, genres }) {
     <div>
       <img src={mediumCoverImage} alt="Unavailable" />
       <h2>
-        <Link to={"/movie/" + id}>{title}</Link>
+        <Link to={`${process.env.PUBLIC_URL}/movie/${id}`}>{title}</Link>
       </h2>
       <p>{summary}</p>
       <ul>
